@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trolley </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Company Logo" class="logo">
+        <h1>Trolley Greet Cards</h1>
+    </header>
+
+    <main>
+
+        <!-- Large Banner Preview -->
+        <div id="previewContainer">
+            <img id="largePreview" src="banner1.jpg" alt="Banner Preview">
+        </div>
+
+        <!-- Small Thumbnails -->
+        <div id="bannerContainer">
+            <img src="banner1.jpg" class="banner-thumb selected" onclick="selectBanner(this, 'banner1.jpg')" alt="Banner 1">
+            <img src="banner2.jpg" class="banner-thumb" onclick="selectBanner(this, 'banner2.jpg')" alt="Banner 2">
+        </div>
+
+        <!-- Two Name Fields -->
+        <div class="input-button-container">
+            <input type="text" id="username1" placeholder="Enter Name">
+            <button onclick="generateBanner('username1')">Generate</button>
+            
+            <input type="text" id="username2" placeholder="Optional">
+            <button onclick="generateBanner('username2')">Generate</button>
+
+
+        </div>
+
+        <div class="input-button-container">
+            <button onclick="downloadBanner()">Download</button>
+        </div>
+
+        <!-- Hidden Canvas -->
+        <canvas id="bannerCanvas" width="1200" height="628"></canvas>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Acme Corp. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

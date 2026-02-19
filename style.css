@@ -1,0 +1,117 @@
+/* Global Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background: #FFF5EB;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #FF8200;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+header .logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+/* Large Preview */
+#previewContainer {
+    margin-bottom: 20px;
+}
+
+#largePreview {
+    width: 800px;
+    height: 419px;
+    border: 5px solid #FF8200;
+    border-radius: 10px;
+}
+
+/* Small banner thumbnails */
+#bannerContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.banner-thumb {
+    width: 150px;
+    height: 79px;
+    border: 3px solid #FF8200;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.banner-thumb:hover {
+    transform: scale(1.05);
+    border-color: #EF7D00;
+}
+
+/* Highlight selected thumbnail */
+.banner-thumb.selected {
+    border: 5px solid #EF7D00;
+}
+
+/* Canvas hidden */
+canvas {
+    display: none;
+}
+
+/* Centered Input and Buttons */
+.input-button-container {
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-items: center;     /* vertically align */
+    gap: 10px;               /* space between input and buttons */
+    margin-bottom: 20px;
+}
+
+.input-button-container input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #FF8200;
+    max-width: 300px;
+}
+
+.input-button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #FF8200;
+    background-color: #FF8200;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-button-container button:hover {
+    background-color: #EF7D00;
+}
+
+/* Footer */
+footer {
+    background-color: #FF8200;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}
